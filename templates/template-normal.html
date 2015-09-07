@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="starter-template">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-5">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        {{content}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-6">
+                <div  ng-if="type == 'video'"class="embed-responsive embed-responsive-16by9">
+                    <youtube-video video-id="video"></youtube-video>
+                </div>
+                <div ng-if="type == 'image'">
+                    <img class="img-responsive img-thumbnail" src="/img/{{value}}"></img>
+                </div>
+            </div>
+        </div>
+        
+                
+                
+    </div>
+</div>
+
+<footer class="navbar navbar-default navbar-fixed-bottom">
+    <div class="row">
+        <div class="col-md-4">
+            © Copyright - Enplater
+        </div>
+        <div class="col-md-4">
+            
+        </div>
+        <div class="col-md-4">
+            Twitter - Facebook - Youtube - G+ - Linkedin
+        </div>
+    </div>
+</footer>

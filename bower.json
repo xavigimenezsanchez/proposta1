@@ -1,0 +1,31 @@
+{
+  "name": "proposta1",
+  "version": "0.0.0",
+  "authors": [
+    "xavigimenezsanchez <javiergimenezsanchez@gmail.com>"
+  ],
+  "description": "Proposta1 web emplaber",
+  "main": "server.js",
+  "keywords": [
+    "enplater"
+  ],
+  "license": "MIT",
+  "homepage": "www.enplater.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.4",
+    "angular-ui-router": "~0.2.15",
+    "angular-youtube-mb": "~1.1.0",
+    "bootstrap-social": "~4.10.0"
+  },
+  "overrides": {
+    "main": "**/*.min.js"
+  }
+}
