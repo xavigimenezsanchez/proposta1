@@ -27,7 +27,8 @@ body {
 /* Home Page Carousel */
 
 header.carousel {
-    height: 50%;
+    /*height: 100%;*/
+    /* If you want a 100% carousel you must tu put 100%;*/
 }
 
 header.carousel .item,
