@@ -105,6 +105,54 @@ angular.module('appEnplater')
                 templateUrl: 'template-normal.html',
                 controller: 'NormalController',
                 code: 2
+            })
+            .state('app.ca.fabrication' , {
+                url: '/fabrication',
+                templateUrl: 'template-normal.html',
+                controller: 'NormalController',
+                code: 3
+            })
+            .state('app.es.fabrication' , {
+                url: '/fabrication',
+                templateUrl: 'template-normal.html',
+                controller: 'NormalController',
+                code: 3
+            })
+            .state('app.en.fabrication' , {
+                url: '/fabrication',
+                templateUrl: 'template-normal.html',
+                controller: 'NormalController',
+                code: 3
+            })
+            .state('app.fr.fabrication' , {
+                url: '/fabrication',
+                templateUrl: 'template-normal.html',
+                controller: 'NormalController',
+                code: 3
+            })
+            .state('app.ca.quality' , {
+                url: '/quality',
+                templateUrl: 'template-normal.html',
+                controller: 'NormalController',
+                code: 4
+            })
+            .state('app.es.quality' , {
+                url: '/quality',
+                templateUrl: 'template-normal.html',
+                controller: 'NormalController',
+                code: 4
+            })
+            .state('app.en.quality' , {
+                url: '/quality',
+                templateUrl: 'template-normal.html',
+                controller: 'NormalController',
+                code: 4
+            })
+            .state('app.fr.quality' , {
+                url: '/quality',
+                templateUrl: 'template-normal.html',
+                controller: 'NormalController',
+                code: 4
             });
             
         $locationProvider.html5Mode(true);
