@@ -45,6 +45,17 @@ angular.module('appEnplater')
                                 },
                     value: '1v3s6t6MTh8'
                             
+                 },{ 
+                    code    : 5,
+                    type   :'video', 
+                    'class' : '----', 
+                    content :  {    'ca': 'Tipus 5 català',
+                                   'es': 'Tipo 5 castellano',
+                                   'fr': 'Tipeee 5 francès',
+                                   'en': 'English 5 type'
+                                },
+                    value: '1v3s6t6MTh8'
+                            
                  }];
         this.getContent = function(code) {
             return content[code].content[GeneralSvc.getLang()];

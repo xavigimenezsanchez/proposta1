@@ -4,7 +4,8 @@ angular.module('appEnplater')
             restrict: 'E',
             scope: {
                 menus: '=items',
-                language: '=language'
+                language: '=language',
+                menuClass: '=menuClass'
             },
             templateUrl: 'menu-template.html',
             link: function(scope,element,attr) {

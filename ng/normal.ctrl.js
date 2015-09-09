@@ -8,5 +8,6 @@ angular.module('appEnplater')
         $scope.type = ContentSvc.getType($state.current.code);
         $scope.$on('changeLanguage', function() {
             $scope.content = ContentSvc.getContent($state.current.code);
-        })
+        });
+       $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
     })

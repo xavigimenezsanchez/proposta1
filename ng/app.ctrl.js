@@ -13,4 +13,13 @@ angular.module('appEnplater')
             $scope.language = GeneralSvc.getLang();
         });
         
+        $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
+            console.log(toState);
+            if (toState.code == 0) {
+                $scope.menuClass = '';
+            } else {
+                $scope.menuClass = '';
+            }
+        });
+        
     });

@@ -153,6 +153,30 @@ angular.module('appEnplater')
                 templateUrl: 'template-normal.html',
                 controller: 'NormalController',
                 code: 4
+            })
+            .state('app.ca.contact' , {
+                url: '/contact',
+                templateUrl: 'template-contact.html',
+                controller: 'ContactController',
+                code: 5
+            })
+            .state('app.es.contact' , {
+                url: '/contact',
+                templateUrl: 'template-contact.html',
+                controller: 'ContactController',
+                code: 5
+            })
+            .state('app.en.contact' , {
+                url: '/contact',
+                templateUrl: 'template-contact.html',
+                controller: 'ContactController',
+                code: 5
+            })
+            .state('app.fr.contact' , {
+                url: '/contact',
+                templateUrl: 'template-contact.html',
+                controller: 'ContactController',
+                code: 5
             });
             
         $locationProvider.html5Mode(true);
