@@ -29,8 +29,10 @@ angular.module('appEnplater')
                 scope.changeItem = function(menu) {
                     if (this.menuItem.link == 'home') {
                         scope.menuClass = "navbar-wrapper";
+                        $('#menuContainer').addClass('container');
                     } else {
                         scope.menuClass = "navbar";
+                        $('#menuContainer').removeClass('container');
                     }
                 };
             }
