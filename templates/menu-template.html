@@ -10,7 +10,7 @@
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav" >
-                        <li ng-repeat="menuItem in menus"><a ui-sref="app.{{language}}.{{menuItem.link}}" href="">{{menuItem.label}}</a></li>
+                        <li ng-repeat="menuItem in menus"><a ng-click="changeItem()" ui-sref="app.{{language}}.{{menuItem.link}}" href="">{{menuItem.label}}</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
@@ -22,14 +22,11 @@
                             <li><a ng-click="changeLanguage('fr')">{{translates.languages[language].fr}}</a></li>
                           </ul>
                         </li>
-        
                     </ul>
                 </div>
                 <!--/.nav-collapse -->
             </div>
         </nav>
-        
     </div>
-    
 </div>
 

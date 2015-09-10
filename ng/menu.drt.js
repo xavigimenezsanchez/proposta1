@@ -17,6 +17,7 @@ angular.module('appEnplater')
                                                     'fr' : { 'ca':'Catalane',    'es' : 'Espagnol' ,   'fr' : 'Français',   'en' : 'Anglais' }
                                                     }
                                     };
+                scope.menuClass = 'navbar-wrapper';
                 scope.changeLanguage = function(lang){
                     GeneralSvc.setLang(lang);
                     scope.menus = MenuSvc.getMenu();
@@ -24,6 +25,13 @@ angular.module('appEnplater')
                     
                     $rootScope.$broadcast('changeLanguage');
                     $state.go('^.^.'+lang+$state.current.name.substr(6));
+                };
+                scope.changeItem = function(menu) {
+                    if (this.menuItem.link == 'home') {
+                        scope.menuClass = "navbar-wrapper";
+                    } else {
+                        scope.menuClass = "navbar";
+                    }
                 };
             }
         };
