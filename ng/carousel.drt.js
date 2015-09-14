@@ -6,7 +6,7 @@ angular.module('appEnplater')
            link: function(scope,element,attr) {
                console.log('Carousel loaded');
                 $('.carousel').carousel({
-                      interval: 300000
+                      interval: 4000
                     });
                  $('.carousel .active .row p.u').transition({ y: -210 },500,'snap');; 
                 $('.carousel').on('slid.bs.carousel', function () {
