@@ -1,56 +1,26 @@
 <header id="myCarousel" class="carousel slide">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="{{key}}" ng-repeat="(key,value) in content" ng-class="{active:key==0}"></li>
             </ol>
     
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-                <div class="item active">
-                    <div class="fill" style="background-image:url('img/home/foto-1.jpg');"></div>
+                <div ng-repeat="(key,value) in content" ng-class="{active:key==0}" class="item">
+                    <div class="fill" style="background-image:url('img/home/{{value.pic}}');"></div>
                     <div class="carousel-caption">
                         <div class="row">
-                            <div class="col-xs-4">
-                                <p class="u">Aquí podrà anar informació d'interès</p>
+                            <div  ng-if="value.rightText" class="col-xs-4">
+                                <p class="u">{{value.rightText.content}}</p>
+                            </div>
+                            <div  ng-if="value.centerText" class="col-xs-4" ng-class="{'col-xs-offset-4':!value.rightText}">
+                                <p class="u">{{value.centerText.content}}</p>
+                            </div>
+                            <div  ng-if="value.leftText" class="col-xs-4" ng-class="{'col-xs-offset-4':(value.rightText && !value.centerText),'col-xs-offset-8':(!value.rightText && !value.centerText) }">
+                                <p class="u">{{value.leftText.content}}</p>
                             </div>
                         </div>
                         
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="fill" style="background-image:url('img/home/foto-2.jpg');"></div>
-                    <div class="carousel-caption">
-                        <div class="row">
-                            <div class="col-xs-offset-8 col-xs-4">
-                                <p class="u">Aquí podrà anar informació d'interès</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="fill" style="background-image:url('img/home/foto-4.jpg');"></div>
-                    <div class="carousel-caption">
-                        <div class="row">
-                            <div class="col-xs-4">
-                                <p class="u">Aquí podrà anar informació d'interès</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="fill" style="background-image:url('img/home/foto-5.jpg');"></div>
-                    <div class="carousel-caption">
-                        <div class="row">
-                            <div class="col-xs-4">
-                                <p class="q">Aquí podrà anar informació d'interès</p>
-                            </div>
-                            <div class="col-xs-offset-4 col-xs-4">
-                                <p class="q">Aquí podrà anar informació d'interès</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

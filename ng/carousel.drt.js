@@ -2,6 +2,9 @@ angular.module('appEnplater')
     .directive('carousel', function() {
        return {
            restrict:    'E',
+           scope: {
+                content: '=content'
+            },
            templateUrl: 'carousel-template.html',
            link: function(scope,element,attr) {
                console.log('Carousel loaded');

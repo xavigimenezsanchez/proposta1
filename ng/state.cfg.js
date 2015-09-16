@@ -45,21 +45,25 @@ angular.module('appEnplater')
             .state('app.es.home', {
                 url: '/home',
                 templateUrl: 'template-home.html',
+                controller: 'HomeController',
                 code: 0
             })
             .state('app.ca.home', {
                 url: '/home',
                 templateUrl: 'template-home.html',
+                controller: 'HomeController',
                 code: 0
             })
             .state('app.en.home', {
                 url: '/home',
                 templateUrl: 'template-home.html',
+                controller: 'HomeController',
                 code: 0
             })
             .state('app.fr.home', {
                 url: '/home',
                 templateUrl: 'template-home.html',
+                controller: 'HomeController',
                 code: 0
             })
             .state('app.ca.empresa' , {
