@@ -2,72 +2,39 @@
     <carousel content="content.carousel"></carousel>
     
     <div class="container">
-        <div class="row featurette">
-            <div class="col-xs-12">
-                <h1 class="featurette-heading">Enplater. Envases Plásticos del Ter</h1>
-                <p class="lead">Enplater se dedica a la impresión de embalaje flexible con todos los procesos integrados en todo tipo de soportes: como OPP, PE, PET, PA, Papel y BOPP</p>
+        <div ng-repeat="(key, p) in content.paragraphs">
+            <div ng-if="key==0" class="col-xs-12">
+                <div class="row">
+                    <div class="col-md-4"><img class="featurette-image img-responsive center-block" src="{{p.logo1}}"> </div>
+                    <div class="col-md-4"><h4 class="center featurette-heading" style="text-align:center; margin-top:0 !important;">{{p.heading.text}}</h4></div>
+                    <div class="col-md-4"><img class="featurette-image img-responsive center-block" src="{{p.logo2}}"></div>
+                </div>
+                <p ng-repeat="t in p.text" class="lead">{{t}}</p>
+                <hr class="featurette-divider">
             </div>
-                
+            <div ng-if="(key%2)==1" class="row featurette">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                      <img class="featurette-image img-responsive left-block" src="{{p.logo}}" alt="" style="width: 300px;">
+                      <p ng-repeat="t in p.text" class="lead">{{t}}</p>
+                    </div>
+                    <div class="col-md-5">
+                      <!--img class="featurette-image img-responsive center-block" src="img/home/packagingcluster-logo1.jpg" alt=""-->
+                    </div>
+                </div>
+            </div>
+            <div ng-if="(key%2)==0 && key!=0" class="row featurette">
+                <hr class="featurette-divider">
+                <div class="col-md-7 col-md-push-5">
+                  <h2 class="featurette-heading">{{p.heading}}</h2>
+                  <p ng-repeat="t in p.text" class="lead">{{t}}</p>
+                </div>
+                <div class="col-md-5 col-md-pull-7">
+                  <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="">
+                </div>
+            </div>
             
-        </div>
-        <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5">
-              <img class="featurette-image img-responsive center-block" data-src="" alt="">
-            </div>
-        </div>
-        <hr class="featurette-divider">
-        <div class="row featurette">
-            <div class="col-md-7 col-md-push-5">
-              <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5 col-md-pull-7">
-              <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="">
-            </div>
-        </div>
-        <hr class="featurette-divider">
-        <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5">
-              <img class="featurette-image img-responsive center-block" data-src="" alt="">
-            </div>
-        </div>
-        <hr class="featurette-divider">
-        <div class="row featurette">
-            <div class="col-md-7 col-md-push-5">
-              <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5 col-md-pull-7">
-              <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="">
-            </div>
-        </div>
-        <hr class="featurette-divider">
-        <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5">
-              <img class="featurette-image img-responsive center-block" data-src="" alt="">
-            </div>
-        </div>
-        <hr class="featurette-divider">
-        <div class="row featurette">
-            <div class="col-md-7 col-md-push-5">
-              <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5 col-md-pull-7">
-              <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="">
-            </div>
         </div>
         <hr class="featurette-divider">
           

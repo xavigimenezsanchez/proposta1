@@ -15,7 +15,6 @@ angular.module('appEnplater')
         $scope.menuClass = 'navbar-wrapper';
         
         $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
-            console.log(toState);
             if (toState.code == 0) {
                 $scope.menuClass = 'navbar-wrapper';
             } else {

@@ -1,22 +1,44 @@
 <div style="padding-top: 60px">
     
     <div id="menuContainer" class="container">
-        <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading">Algun Títol <span class="text-muted">continuem amb el títol.</span></h2>
-              <p class="lead">{{content}}</p>
-            </div>
-            <div class="col-md-5">
-                
-              
-                <div  ng-if="type == 'video'"class="featurette-heading featurette-image embed-responsive embed-responsive-16by9">
-                    <youtube-video video-id="video"></youtube-video>
+        <div ng-repeat="(key,p) in content">
+            <div ng-if="key%2==0" class="row featurette">
+                <div class="col-md-7">
+                  <h2  class="featurette-heading">{{p.heading.principal}}<span class="text-muted">{{p.heading.second}}</span></h2>
+                  <p ng-repeat= "t in p.text" class="lead">{{t}}</p>
                 </div>
-                <div ng-if="type == 'image'">
-                    <img class="featurette-heading featurette-image img-responsive center-block" src="/img/{{value}}"></img>
+                <div class="col-md-5">
+                    
+                  
+                    <div  ng-if="p.type == 'video'"class="featurette-heading featurette-image embed-responsive embed-responsive-16by9">
+                        <youtube-video video-id="video"></youtube-video>
+                    </div>
+                    <div ng-if="p.type == 'image'">
+                        <img class="featurette-heading featurette-image img-responsive center-block" src="/img/{{p.value}}"></img>
+                    </div>
                 </div>
             </div>
+            
+            <div ng-if="key%2==1" class="row featurette">
+                <div class="col-md-7 col-md-push-5">
+                  <h2  class="featurette-heading">{{p.heading.principal}}<span class="text-muted">{{p.heading.second}}</span></h2>
+                  <p ng-repeat= "t in p.text" class="lead">{{t}}</p>
+                </div>
+                <div class="col-md-5 col-md-pull-7">
+                    
+                  
+                    <div  ng-if="p.type == 'video'"class="featurette-heading featurette-image embed-responsive embed-responsive-16by9">
+                        <youtube-video video-id="video"></youtube-video>
+                    </div>
+                    <div ng-if="p.type == 'image'">
+                        <img class="featurette-heading featurette-image img-responsive center-block" src="/img/{{p.value}}"></img>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="featurette-divider">
         </div>
+        
     </div>
     
 </div>

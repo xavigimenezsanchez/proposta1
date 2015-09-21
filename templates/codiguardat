@@ -1,0 +1,21 @@
+<hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7 col-md-push-5">
+              <h2 class="featurette-heading"><img class="featurette-image img-responsive center-block" src="img/EPALogo.png" style="width: 300px;display: inline-block;">Envases Plásticos de Aragón</h2>
+              <p class="lead">Des de la fundació el 1962 a Torroella de Montgrí, província de Girona, la nostre filosofia ha sigut la inversió continua per la incorporació i actualització de tecnologia que ha permès oferir sistemes més eficients.</p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+              <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="">
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading"><img class="featurette-image img-responsive center-block" src="img/EPALogo.png" style="width: 280px;display: inline-block;">Envases Plásticos de Aragón</h2>
+              <p class="lead">Envases Plásticos de Aragón (EPA) es va fundar el 2008 amb l’última tecnologia per embalatge flexible.</p>
+              <p class="lead">Vàrem decidir construir una planta de back up per a garantir els suministre als nostres clients i donar resposta a la demana del mercat europeu del packaging.</p>
+            </div>
+            <div class="col-md-5">
+              <img class="featurette-image img-responsive center-block" data-src="" alt="">
+            </div>
+        </div>
