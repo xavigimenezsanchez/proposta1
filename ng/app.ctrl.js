@@ -13,6 +13,15 @@ angular.module('appEnplater')
             $scope.language = GeneralSvc.getLang();
         });
         $scope.menuClass = 'navbar-wrapper';
+        $scope.social = { 'text'    : '© Copyright - Enplater',
+                          'icons'   : [
+                                    {'type' : 'twitter' ,   'url' : 'http://twitter.com'},
+                                    {'type' : 'facebook' ,  'url' : 'http://twitter.com'},
+                                    {'type' : 'youtube' ,   'url' : 'http://twitter.com'},
+                                    {'type' : 'google-plus','url' : 'http://twitter.com'},
+                                    {'type' : 'linkedin' ,  'url' : 'http://twitter.com'}
+                              ]
+                        };
         
         $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
             if (toState.code == 0) {
