@@ -15,11 +15,11 @@ angular.module('appEnplater')
         $scope.menuClass = 'navbar-wrapper';
         $scope.social = { 'text'    : '© Copyright - Enplater',
                           'icons'   : [
-                                    {'type' : 'twitter' ,   'url' : 'http://twitter.com'},
-                                    {'type' : 'facebook' ,  'url' : 'http://twitter.com'},
-                                    {'type' : 'youtube' ,   'url' : 'http://twitter.com'},
-                                    {'type' : 'google-plus','url' : 'http://twitter.com'},
-                                    {'type' : 'linkedin' ,  'url' : 'http://twitter.com'}
+                                    {'type' : 'twitter' ,   'url' : 'https://twitter.com/enplater'},
+                                    {'type' : 'facebook' ,  'url' : 'https://www.facebook.com/enplater'},
+                                    {'type' : 'youtube' ,   'url' : 'https://www.youtube.com/channel/UCv-dzNk_r_4rRukuMq1HW1w'},
+                                    {'type' : 'google-plus','url' : 'https://plus.google.com/116589014532206686803'},
+                                    {'type' : 'linkedin' ,  'url' : 'https://www.linkedin.com/company/enplater-s-a-'}
                               ]
                         };
         

@@ -4,36 +4,16 @@
     <div class="row">
         
         <div class="col-md-2 col-md-offset-3">
-            <p class="text-center">© Copyright - Enplater<p>
+            <a href="/"><p class="text-center">{{social.text}}<p></a>
         </div>
         <div class="col-md-2">
             
         </div>
         <div class="col-md-4">
             <p class="text-center">
-                <a href="">
-                    <span class="btn btn-social-icon">
-                        <i class="fa fa-twitter"></i>
-                    </span>
-                </a>
-                <a href="">
-                    <span class="btn btn-social-icon ">
-                        <i class="fa fa-facebook"></i>
-                    </span>
-                </a>
-                <a href="">
-                    <span class="btn btn-social-icon ">
-                        <i class="fa fa-youtube"></i>
-                    </span>
-                </a>    
-                <a href="">
-                    <span class="btn btn-social-icon ">
-                        <i class="fa fa-google-plus"></i>
-                    </span>
-                </a>    
-                <a href="">
-                    <span class="btn btn-social-icon ">
-                        <i class="fa fa-linkedin"></i>
+                <a ng-repeat="s in social.icons"  href="{{s.url}}">
+                    <span class="btn btn-social-icon social">
+                        <i class="fa fa-{{s.type}}"></i>
                     </span>
                 </a>
             </p>
