@@ -15,22 +15,22 @@
             <div ng-if="(key%2)==1" class="row featurette">
                 <hr class="featurette-divider">
                 <div class="row featurette">
-                    <div class="col-md-7">
+                    <div class="col-md-7  col-md-push-5">
                       <img class="featurette-image img-responsive left-block" src="{{p.logo}}" alt="" style="width: 300px;">
                       <p ng-repeat="t in p.text" class="lead">{{t}}</p>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5 col-md-pull-7">
                       <!--img class="featurette-image img-responsive center-block" src="img/home/packagingcluster-logo1.jpg" alt=""-->
                     </div>
                 </div>
             </div>
             <div ng-if="(key%2)==0 && key!=0" class="row featurette">
                 <hr class="featurette-divider">
-                <div class="col-md-7 col-md-push-5">
+                <div class="col-md-7">
                   <h2 class="featurette-heading">{{p.heading}}</h2>
                   <p ng-repeat="t in p.text" class="lead">{{t}}</p>
                 </div>
-                <div class="col-md-5 col-md-pull-7">
+                <div class="col-md-5">
                   <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="">
                 </div>
             </div>
@@ -47,28 +47,38 @@
     <div class="row">
         
         <div class="col-md-2 col-md-offset-3">
-            <p>© Copyright - Enplater<p>
+            <p class="text-center">© Copyright - Enplater<p>
         </div>
         <div class="col-md-2">
             
         </div>
         <div class="col-md-4">
-            <p>
-                <span class="btn btn-social-icon">
-                    <i class="fa fa-twitter"></i>
-                </span>
-                <span class="btn btn-social-icon ">
-                    <i class="fa fa-facebook"></i>
-                </span>
-                <span class="btn btn-social-icon ">
-                    <i class="fa fa-youtube"></i>
-                </span>
-                <span class="btn btn-social-icon ">
-                    <i class="fa fa-google-plus"></i>
-                </span>
-                <span class="btn btn-social-icon ">
-                    <i class="fa fa-linkedin"></i>
-                </span>
+            <p class="text-center">
+                <a href="">
+                    <span class="btn btn-social-icon">
+                        <i class="fa fa-twitter"></i>
+                    </span>
+                </a>
+                <a href="">
+                    <span class="btn btn-social-icon ">
+                        <i class="fa fa-facebook"></i>
+                    </span>
+                </a>
+                <a href="">
+                    <span class="btn btn-social-icon ">
+                        <i class="fa fa-youtube"></i>
+                    </span>
+                </a>    
+                <a href="">
+                    <span class="btn btn-social-icon ">
+                        <i class="fa fa-google-plus"></i>
+                    </span>
+                </a>    
+                <a href="">
+                    <span class="btn btn-social-icon ">
+                        <i class="fa fa-linkedin"></i>
+                    </span>
+                </a>
             </p>
                 
         </div>

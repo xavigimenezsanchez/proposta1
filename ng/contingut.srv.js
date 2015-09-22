@@ -134,48 +134,118 @@ angular.module('appEnplater')
                             
                  },{ 
                     code    : 2,
-                    type   : 'image', 
                     'class' : '----', 
-                    content :  {    'ca': 'A Enplater fabriquem embalatges flexibles pels seus productes segons les característiques i requisits, assegurant la imatge, protecció i maquinabilitat. Posem al seu abast el suport dels nostres especialistes i el productes més innovadors del mercat per a que es trobi la millor solució a les seves necessitats.La disponibilitat d’una amplia gama de materials d’última tecnologia i la infinitat de combinacions possibles, amb la garantia d’una impressió de qualitat sobre qualsevol superfície, assegura un alt valor afegit pels nostres clients.',
-                                   'es': 'En Enplater ofrecemos embalajes flexible para sus productos según sus características y requisitos, asegurando su imagen, protección y maquinabilidad.A su vez, ponemos a su alcance, el soporte de sus especialistas y los productos más innovadores del mercado para que encuentre la solución más adecuada a sus necesidades.La disponibilidad de una amplia gama de materiales de última tecnología y la infinidad de combinaciones posibles, junto a la garantía de una impresión de calidad sobre cualquier superficie, asegura un alto valor añadido para nuestros clientes.',
-                                   'fr': 'Chez Enplater nous vous proposons des emballages flexibles en fonction des caractéristiques et requis de votre produit, en assurant une bonne image, protection et machinabilitée.De plus, nous vous proposons le soutien de ses spécialistes ainsi que les produits les plus innovateurs du marché pour que vous puissiez trouvez la solution la plus satisfaisante pour vos besoins.La disponibilité d’un vaste échantillon de matériaux de technologie de pointe et de l’infinité de combinaisons possibles, tout en ajoutant la garantie d’une impression de qualité sur quelconque superficie, assure une haute valeur ajoutée pour nos clients.',
-                                   'en': 'There is not english description '
-                                },
-                    value : 'fabricacion.jpg'
-                            
+                    content :  {    'ca' : [{   type:'image',
+                                                heading:{'principal' : "", 'second': ""},
+                                                text : ['A Enplater fabriquem embalatges flexibles pels seus productes segons les característiques i requisits, assegurant la imatge, protecció i maquinabilitat. Posem al seu abast el suport dels nostres especialistes i el productes més innovadors del mercat per a que es trobi la millor solució a les seves necessitats.', 'La disponibilitat d’una amplia gama de materials d’última tecnologia i la infinitat de combinacions possibles, amb la garantia d’una impressió de qualitat sobre qualsevol superfície, assegura un alt valor afegit pels nostres clients.'],
+                                                value   : 'fabricacion.jpg'
+                                            }
+                                        ],
+                                    'es' : [{   type:'image',
+                                                heading:{'principal' : "", 'second': ""},
+                                                text : ['En Enplater ofrecemos embalajes flexible para sus productos según sus características y requisitos, asegurando su imagen, protección y maquinabilidad.','A su vez, ponemos a su alcance, el soporte de sus especialistas y los productos más innovadores del mercado para que encuentre la solución más adecuada a sus necesidades.','La disponibilidad de una amplia gama de materiales de última tecnología y la infinidad de combinaciones posibles, junto a la garantía de una impresión de calidad sobre cualquier superficie, asegura un alto valor añadido para nuestros clientes.'],
+                                                value   : 'fabricacion.jpg'
+                                            }
+                                        ],
+                                    'fr' : [{   type:'image',
+                                                heading:{'principal' : "", 'second': ""},
+                                                text : ['Chez Enplater nous vous proposons des emballages flexibles en fonction des caractéristiques et requis de votre produit, en assurant une bonne image, protection et machinabilitée.','De plus, nous vous proposons le soutien de ses spécialistes ainsi que les produits les plus innovateurs du marché pour que vous puissiez trouvez la solution la plus satisfaisante pour vos besoins.','La disponibilité d’un vaste échantillon de matériaux de technologie de pointe et de l’infinité de combinaisons possibles, tout en ajoutant la garantie d’une impression de qualité sur quelconque superficie, assure une haute valeur ajoutée pour nos clients.'],
+                                                value   : 'fabricacion.jpg'
+                                            }
+                                        ],
+                                    'en' : [{   type:'image',
+                                                heading:{'principal' : "", 'second': ""},
+                                                text : ['English text','English text'],
+                                                value   : 'fabricacion.jpg'
+                                            }
+                                        ]
+                                }
                  },{ 
                     code    : 3,
-                    type   : 'image', 
                     'class' : '----', 
-                    content :  {    'ca': 'Tipus 3 català',
-                                   'es': 'Tipo 3 castellano',
-                                   'fr': 'Tipeee 3 francès',
-                                   'en': 'English 3 type'
-                                },
-                    value   : 'fabricacion.jpg'
+                    content :  {    'ca' : [{   type:'image',
+                                                heading:{'principal' : "", 'second': ""},
+                                                text : ['A Enplater fabriquem embalatges flexibles pels seus productes segons les característiques i requisits, assegurant la imatge, protecció i maquinabilitat. Posem al seu abast el suport dels nostres especialistes i el productes més innovadors del mercat per a que es trobi la millor solució a les seves necessitats.', 'La disponibilitat d’una amplia gama de materials d’última tecnologia i la infinitat de combinacions possibles, amb la garantia d’una impressió de qualitat sobre qualsevol superfície, assegura un alt valor afegit pels nostres clients.'],
+                                                value   : 'fabricacion.jpg'
+                                            }
+                                        ],
+                                    'es' : [{   type:'image',
+                                                heading:{'principal' : "", 'second': ""},
+                                                text : ['En Enplater ofrecemos embalajes flexible para sus productos según sus características y requisitos, asegurando su imagen, protección y maquinabilidad.','A su vez, ponemos a su alcance, el soporte de sus especialistas y los productos más innovadores del mercado para que encuentre la solución más adecuada a sus necesidades.','La disponibilidad de una amplia gama de materiales de última tecnología y la infinidad de combinaciones posibles, junto a la garantía de una impresión de calidad sobre cualquier superficie, asegura un alto valor añadido para nuestros clientes.'],
+                                                value   : 'fabricacion.jpg'
+                                            }
+                                        ],
+                                    'fr' : [{   type:'image',
+                                                heading:{'principal' : "", 'second': ""},
+                                                text : ['Chez Enplater nous vous proposons des emballages flexibles en fonction des caractéristiques et requis de votre produit, en assurant une bonne image, protection et machinabilitée.','De plus, nous vous proposons le soutien de ses spécialistes ainsi que les produits les plus innovateurs du marché pour que vous puissiez trouvez la solution la plus satisfaisante pour vos besoins.','La disponibilité d’un vaste échantillon de matériaux de technologie de pointe et de l’infinité de combinaisons possibles, tout en ajoutant la garantie d’une impression de qualité sur quelconque superficie, assure une haute valeur ajoutée pour nos clients.'],
+                                                value   : 'fabricacion.jpg'
+                                            }
+                                        ],
+                                    'en' : [{   type:'image',
+                                                heading:{'principal' : "", 'second': ""},
+                                                text : ['English text','English text'],
+                                                value   : 'fabricacion.jpg'
+                                            }
+                                        ]
+                                }
                             
                  },{ 
                     code    : 4,
-                    type   :'video', 
                     'class' : '----', 
-                    content :  {    'ca': 'Tipus 4 català',
-                                   'es': 'Tipo 4 castellano',
-                                   'fr': 'Tipeee 4 francès',
-                                   'en': 'English 4 type'
-                                },
-                    value: '1v3s6t6MTh8'
+                    content :  {    'ca' : [{   type:'image',
+                                                heading:{'principal' : "", 'second': ""},
+                                                text : ['A Enplater fabriquem embalatges flexibles pels seus productes segons les característiques i requisits, assegurant la imatge, protecció i maquinabilitat. Posem al seu abast el suport dels nostres especialistes i el productes més innovadors del mercat per a que es trobi la millor solució a les seves necessitats.', 'La disponibilitat d’una amplia gama de materials d’última tecnologia i la infinitat de combinacions possibles, amb la garantia d’una impressió de qualitat sobre qualsevol superfície, assegura un alt valor afegit pels nostres clients.'],
+                                                value   : 'fabricacion.jpg'
+                                            }
+                                        ],
+                                    'es' : [{   type:'image',
+                                                heading:{'principal' : "", 'second': ""},
+                                                text : ['En Enplater ofrecemos embalajes flexible para sus productos según sus características y requisitos, asegurando su imagen, protección y maquinabilidad.','A su vez, ponemos a su alcance, el soporte de sus especialistas y los productos más innovadores del mercado para que encuentre la solución más adecuada a sus necesidades.','La disponibilidad de una amplia gama de materiales de última tecnología y la infinidad de combinaciones posibles, junto a la garantía de una impresión de calidad sobre cualquier superficie, asegura un alto valor añadido para nuestros clientes.'],
+                                                value   : 'fabricacion.jpg'
+                                            }
+                                        ],
+                                    'fr' : [{   type:'image',
+                                                heading:{'principal' : "", 'second': ""},
+                                                text : ['Chez Enplater nous vous proposons des emballages flexibles en fonction des caractéristiques et requis de votre produit, en assurant une bonne image, protection et machinabilitée.','De plus, nous vous proposons le soutien de ses spécialistes ainsi que les produits les plus innovateurs du marché pour que vous puissiez trouvez la solution la plus satisfaisante pour vos besoins.','La disponibilité d’un vaste échantillon de matériaux de technologie de pointe et de l’infinité de combinaisons possibles, tout en ajoutant la garantie d’une impression de qualité sur quelconque superficie, assure une haute valeur ajoutée pour nos clients.'],
+                                                value   : 'fabricacion.jpg'
+                                            }
+                                        ],
+                                    'en' : [{   type:'image',
+                                                heading:{'principal' : "", 'second': ""},
+                                                text : ['English text','English text'],
+                                                value   : 'fabricacion.jpg'
+                                            }
+                                        ]
+                                }
                             
                  },{ 
-                    code    : 5,
-                    type   :'video', 
+                    code    : 5, 
                     'class' : '----', 
-                    content :  {    'ca': 'Tipus 5 català',
-                                   'es': 'Tipo 5 castellano',
-                                   'fr': 'Tipeee 5 francès',
-                                   'en': 'English 5 type'
-                                },
-                    value: '1v3s6t6MTh8'
-                            
+                    content :  {    'ca' : [{   type:'image',
+                                                heading:{'principal' : "", 'second': ""},
+                                                text : ['A Enplater fabriquem embalatges flexibles pels seus productes segons les característiques i requisits, assegurant la imatge, protecció i maquinabilitat. Posem al seu abast el suport dels nostres especialistes i el productes més innovadors del mercat per a que es trobi la millor solució a les seves necessitats.', 'La disponibilitat d’una amplia gama de materials d’última tecnologia i la infinitat de combinacions possibles, amb la garantia d’una impressió de qualitat sobre qualsevol superfície, assegura un alt valor afegit pels nostres clients.'],
+                                                value   : 'fabricacion.jpg'
+                                            }
+                                        ],
+                                    'es' : [{   type:'image',
+                                                heading:{'principal' : "", 'second': ""},
+                                                text : ['En Enplater ofrecemos embalajes flexible para sus productos según sus características y requisitos, asegurando su imagen, protección y maquinabilidad.','A su vez, ponemos a su alcance, el soporte de sus especialistas y los productos más innovadores del mercado para que encuentre la solución más adecuada a sus necesidades.','La disponibilidad de una amplia gama de materiales de última tecnología y la infinidad de combinaciones posibles, junto a la garantía de una impresión de calidad sobre cualquier superficie, asegura un alto valor añadido para nuestros clientes.'],
+                                                value   : 'fabricacion.jpg'
+                                            }
+                                        ],
+                                    'fr' : [{   type:'image',
+                                                heading:{'principal' : "", 'second': ""},
+                                                text : ['Chez Enplater nous vous proposons des emballages flexibles en fonction des caractéristiques et requis de votre produit, en assurant une bonne image, protection et machinabilitée.','De plus, nous vous proposons le soutien de ses spécialistes ainsi que les produits les plus innovateurs du marché pour que vous puissiez trouvez la solution la plus satisfaisante pour vos besoins.','La disponibilité d’un vaste échantillon de matériaux de technologie de pointe et de l’infinité de combinaisons possibles, tout en ajoutant la garantie d’une impression de qualité sur quelconque superficie, assure une haute valeur ajoutée pour nos clients.'],
+                                                value   : 'fabricacion.jpg'
+                                            }
+                                        ],
+                                    'en' : [{   type:'image',
+                                                heading:{'principal' : "", 'second': ""},
+                                                text : ['English text','English text'],
+                                                value   : 'fabricacion.jpg'
+                                            }
+                                        ]
+                                }
                  }];
         this.getContent = function(code) {
             return content[code].content[GeneralSvc.getLang()];
