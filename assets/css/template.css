@@ -10,13 +10,28 @@ body {
   position : relative;
 }
 
+.social {
+  transition:All 1.0416s ease-in-out;
+-webkit-transition:All 1.0416s ease-in-out;
+-moz-transition:All 1.0416s ease-in-out;
+-o-transition:All 1.0416s ease-in-out;
+transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+-webkit-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+-moz-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+-o-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+-ms-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+}
 .social:hover {
   color:#ec1111;
+  transform: rotate(360deg) scale(1) skew(1deg) translate(0px);
+-webkit-transform: rotate(360deg) scale(1) skew(1deg) translate(0px);
+-moz-transform: rotate(360deg) scale(1) skew(1deg) translate(0px);
+-o-transform: rotate(360deg) scale(1) skew(1deg) translate(0px);
+-ms-transform: rotate(360deg) scale(1) skew(1deg) translate(0px);
 }
 
 .menu-top {
   margin-top: 0 !important;
-  
 }
 
 /* .embed-* is from bootstrap, for responsive videos */
