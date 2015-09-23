@@ -23,16 +23,20 @@ angular.module('appEnplater')
                     scope.menus = MenuSvc.getMenu();
                     scope.language = lang;
                     
+                    
                     $rootScope.$broadcast('changeLanguage');
                     $state.go('^.^.'+lang+$state.current.name.substr(6));
                 };
+                
+                scope.$on('$viewContentLoaded', function(event, toState, toParams, fromState, fromParams){
+                   console.log(toState); 
+                });
+
                 scope.changeItem = function(menu) {
                     if (this.menuItem.link == 'home') {
-                        scope.menuClass = "navbar-wrapper";
-                        $('#menuContainer').addClass('container');
+                        scope.menuClass = "menu";
                     } else {
-                        scope.menuClass = "navbar";
-                        $('#menuContainer').removeClass('container');
+                        scope.menuClass = "menu-top";
                     }
                 };
             }

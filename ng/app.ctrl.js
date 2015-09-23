@@ -12,7 +12,8 @@ angular.module('appEnplater')
             $scope.menuItems = MenuSvc.getMenu(GeneralSvc.getLang());
             $scope.language = GeneralSvc.getLang();
         });
-        $scope.menuClass = 'navbar-wrapper';
+        
+
         $scope.social = { 'text'    : '© Copyright - Enplater',
                           'icons'   : [
                                     {'type' : 'twitter' ,   'url' : 'https://twitter.com/enplater'},
@@ -22,13 +23,4 @@ angular.module('appEnplater')
                                     {'type' : 'linkedin' ,  'url' : 'https://www.linkedin.com/company/enplater-s-a-'}
                               ]
                         };
-        
-        $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
-            if (toState.code == 0) {
-                $scope.menuClass = 'navbar-wrapper';
-            } else {
-                $scope.menuClass = 'navbar';
-            }
-        });
-        
     });
