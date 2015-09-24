@@ -4,8 +4,7 @@ angular.module('appEnplater')
             restrict: 'E',
             scope: {
                 menus: '=items',
-                language: '=language',
-                menuClass: '=menuClass'
+                language: '=language'
             },
             templateUrl: 'menu-template.html',
             link: function(scope,element,attr) {
@@ -17,7 +16,7 @@ angular.module('appEnplater')
                                                     'fr' : { 'ca':'Catalane',    'es' : 'Espagnol' ,   'fr' : 'Français',   'en' : 'Anglais' }
                                                     }
                                     };
-                scope.menuClass = 'navbar-wrapper';
+                
                 scope.changeLanguage = function(lang){
                     GeneralSvc.setLang(lang);
                     scope.menus = MenuSvc.getMenu();
@@ -28,9 +27,7 @@ angular.module('appEnplater')
                     $state.go('^.^.'+lang+$state.current.name.substr(6));
                 };
                 
-                scope.$on('$viewContentLoaded', function(event, toState, toParams, fromState, fromParams){
-                   console.log(toState); 
-                });
+                
 
                 scope.changeItem = function(menu) {
                     if (this.menuItem.link == 'home') {

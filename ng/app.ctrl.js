@@ -13,6 +13,13 @@ angular.module('appEnplater')
             $scope.language = GeneralSvc.getLang();
         });
         
+      $scope.$on('$viewContentLoaded', function(event, toState, toParams, fromState, fromParams){
+                   if ($state.current.code == 0) {
+                       $scope.menuClass = 'menu';
+                   } else {
+                       $scope.menuClass = 'menu-top';
+                   }
+                });
 
         $scope.social = { 'text'    : '© Copyright - Enplater',
                           'icons'   : [
