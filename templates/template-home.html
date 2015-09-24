@@ -5,9 +5,9 @@
         <div ng-repeat="(key, p) in content.paragraphs">
             <div ng-if="key==0" class="col-xs-12">
                 <div class="row">
-                    <div class="col-md-4"><img class="featurette-image img-responsive center-block" src="{{p.logo1}}"> </div>
-                    <div class="col-md-4"><h4 class="center featurette-heading" style="text-align:center; margin-top:0 !important;">{{p.heading.text}}</h4></div>
-                    <div class="col-md-4"><img class="featurette-image img-responsive center-block" src="{{p.logo2}}"></div>
+                    <div class="col-xs-4"><img class="featurette-image img-responsive center-block" src="{{p.logo1}}"> </div>
+                    <div class="col-xs-4"><h4 class="center featurette-heading" style="text-align:center; margin-top:0 !important;">{{p.heading.text}}</h4></div>
+                    <div class="col-xs-4"><img class="featurette-image img-responsive center-block" src="{{p.logo2}}"></div>
                 </div>
                 <p ng-repeat="t in p.text" class="lead">{{t}}</p>
                 <hr class="featurette-divider">

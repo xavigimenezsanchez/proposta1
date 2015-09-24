@@ -1,33 +1,60 @@
 <div style="padding-top: 100px">
     
     <div class="container">
-        
-        <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading">Enplater Torroella <span class="text-muted">de montgrí</span></h2>
-              <p class="lead">{{content}}</p>
+        <div class="row">
+            <div class="col-xs-6">
+                <ui-gmap-google-map center='map1.center' zoom='map1.zoom'>
+                    <ui-gmap-marker idKey="1" coords="map1.mark"></ui-gmap-marker>
+                </ui-gmap-google-map>
             </div>
-            <div class="col-md-5">
-                <p class="lead">
-                    <ui-gmap-google-map center='map1.center' zoom='map1.zoom'>
-                        <ui-gmap-marker idKey="1" coords="map1.mark"></ui-gmap-marker>
-                    </ui-gmap-google-map>
-                </p>
-            </div>
-        </div>
-        
-         <hr class="featurette-divider">
-        <div class="row featurette">
-            <div class="col-md-7 col-md-push-5">
-              <h2 class="featurette-heading">Enplater Seriñena <span class="text-muted"></span></h2>
-              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5 col-md-pull-7">
-              <ui-gmap-google-map center='map2.center' zoom='map2.zoom'>
+            
+            <div class="col-xs-6">
+                <ui-gmap-google-map center='map2.center' zoom='map2.zoom'>
                     <ui-gmap-marker idKey="1" coords="map2.mark"></ui-gmap-marker>
                 </ui-gmap-google-map>
             </div>
         </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3 col-sm-push-3">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Enplater</h3>
+                  </div>
+                  <div class="panel-body">
+                    <p>C/ Industria, 1</p>
+                    <p>17257 Torroella de Montgrí</p>
+                    <p>Girona - Espanya</p>
+                    <p>Tel: 972761570</p>
+                    <p>Fax: 972761652</p>
+                    <p>Correu: info@enplater.com</p>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-3 col-sm-push-3">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">EPA</h3>
+                  </div>
+                  <div class="panel-body">
+                    <p>Pol. Industrial El Puyalón</p>
+                    <p>22200 - Sariñena</p>
+                    <p>Huesca - Espanya</p>
+                    <p>Tel:  972.761.570</p>
+                    <p>Fax: 972.761.652</p>
+                    <p>Correu: infoepa@enplater.com</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            
+        </div>
+        <hr>
+        
+        
         
     </div>
     
