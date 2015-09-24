@@ -16,8 +16,9 @@ angular.module('appEnplater')
                                                     'fr' : { 'ca':'Catalane',    'es' : 'Espagnol' ,   'fr' : 'Français',   'en' : 'Anglais' }
                                                     }
                                     };
-                
+
                 scope.changeLanguage = function(lang){
+                    
                     GeneralSvc.setLang(lang);
                     scope.menus = MenuSvc.getMenu();
                     scope.language = lang;
@@ -30,11 +31,13 @@ angular.module('appEnplater')
                 
 
                 scope.changeItem = function(menu) {
+                    
                     if (this.menuItem.link == 'home') {
                         scope.menuClass = "menu";
                     } else {
                         scope.menuClass = "menu-top";
                     }
+                    
                 };
             }
         };
