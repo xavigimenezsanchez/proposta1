@@ -28,7 +28,15 @@ body {
 .navbar-wrapper .navbar {
   padding-right: 15px;
   padding-left: 15px;
-  opacity: 0.8;
+  
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .navbar-wrapper .navbar {
+      opacity: 0.8;
+    }
+  
 }
 .navbar-wrapper .navbar .container {
   width: auto;
