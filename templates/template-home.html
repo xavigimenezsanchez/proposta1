@@ -14,14 +14,12 @@
             </div>
             <div ng-if="(key%2)==1" class="row featurette">
                 <hr class="featurette-divider">
-                <div class="row featurette">
-                    <div class="col-md-7  col-md-push-5">
-                      <img class="featurette-image img-responsive left-block" src="{{p.logo}}" alt="" style="width: 300px;">
-                      <p ng-repeat="t in p.text" class="lead">{{t}}</p>
-                    </div>
-                    <div class="col-md-5 col-md-pull-7">
-                      <!--img class="featurette-image img-responsive center-block" src="img/home/packagingcluster-logo1.jpg" alt=""-->
-                    </div>
+                <div class="col-md-7  col-md-push-5">
+                  <img class="featurette-image img-responsive left-block" src="{{p.logo}}" alt="" style="width: 300px;">
+                  <p ng-repeat="t in p.text" class="lead">{{t}}</p>
+                </div>
+                <div class="col-md-5 col-md-pull-7">
+                  <!--img class="featurette-image img-responsive center-block" src="img/home/packagingcluster-logo1.jpg" alt=""-->
                 </div>
             </div>
             <div ng-if="(key%2)==0 && key!=0" class="row featurette">

@@ -11,10 +11,10 @@ body {
 }
 
 .social {
-  transition:All 1.0416s ease-in-out;
--webkit-transition:All 1.0416s ease-in-out;
--moz-transition:All 1.0416s ease-in-out;
--o-transition:All 1.0416s ease-in-out;
+  transition:All .08s ease-in-out;
+-webkit-transition:All 0.8s ease-in-out;
+-moz-transition:All 0.8s ease-in-out;
+-o-transition:All 0.8s ease-in-out;
 transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
 -webkit-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
 -moz-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);

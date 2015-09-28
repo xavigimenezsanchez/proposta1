@@ -193,27 +193,43 @@ angular.module('appEnplater')
                     code    : 4,
                     'class' : '----', 
                     content :  {    'ca' : [{   type:'image',
-                                                heading:{'principal' : "", 'second': ""},
-                                                text : ['A Enplater fabriquem embalatges flexibles pels seus productes segons les característiques i requisits, assegurant la imatge, protecció i maquinabilitat. Posem al seu abast el suport dels nostres especialistes i el productes més innovadors del mercat per a que es trobi la millor solució a les seves necessitats.', 'La disponibilitat d’una amplia gama de materials d’última tecnologia i la infinitat de combinacions possibles, amb la garantia d’una impressió de qualitat sobre qualsevol superfície, assegura un alt valor afegit pels nostres clients.'],
-                                                value   : 'fabricacion.jpg'
+                                                heading:{'principal' : "BCR", 'second': ""},
+                                                text : ['La BRC és un sistema de seguretat alimentaria desenvolupat per l’Associació de Minoristes Britànics, British Retail Consortium (BRC) i específic per l’industria agroalimentària reconegut internacionalment.','Enplater ha pres la determinació de complir amb els requeriments per a garantir als seus clients que acompleix amb els objectius dela Norma BRC, entre els que destaca, fixar els nivells d’acompliment respecte a les exigències higièniques i sanitàries. Aquestes exigències s’han acceptat a nivell global com a plec d’obligat acompliment per a poder subministrar producte de marca del distribuïdor, encara que no sempre de forma exclusiva.','L’estàndar BRC considera els principis i les pràctiques més apropiades dirigides a minimitzar els riscos de contaminació dels aliments.','L’acompliment estàndard de la BRC implicar disposar d’un sistema eficaç de seguretat alimentaria, fonamentat així com us sistema de control del producte i del procés, treballant amb personal qualificat i en unes instal•lacions adequades.'],
+                                                value   : 'BRC.jpg'
+                                            }, {type:'normal',
+                                                heading:{'principal' : "Medi Ambient", 'second': ""},
+                                                text : ['Totes les fases de producció disposen de controls de qualitat per assegurar la conformitat del producte.','Els controls i anàlisi de productes es realitzen al laboratori d’ambdós centres de producció mitjançant instruments i personal qualificat per obtenir productes amb la màxima qualitat.'],
+                                                value   : ''
                                             }
                                         ],
                                     'es' : [{   type:'image',
-                                                heading:{'principal' : "", 'second': ""},
-                                                text : ['En Enplater ofrecemos embalajes flexible para sus productos según sus características y requisitos, asegurando su imagen, protección y maquinabilidad.','A su vez, ponemos a su alcance, el soporte de sus especialistas y los productos más innovadores del mercado para que encuentre la solución más adecuada a sus necesidades.','La disponibilidad de una amplia gama de materiales de última tecnología y la infinidad de combinaciones posibles, junto a la garantía de una impresión de calidad sobre cualquier superficie, asegura un alto valor añadido para nuestros clientes.'],
-                                                value   : 'fabricacion.jpg'
+                                                heading:{'principal' : "BCR", 'second': ""},
+                                                text : ['La BRC IoP, es un sistema de seguridad alimentaria desarrollado por la Asociación de Minoristas Británicos, British Retail Consortium (BRC) Institut of Packaging (IoP) y específico para la industria agroalimentaria reconocido a nivel internacional.','Enplater ha decidido cumplir con sus requerimientos para garantizar a sus clientes que cumple con los objetivos de la Norma BRC, entre los que destaca, fijar los niveles de cumplimiento respecto a las exigencias de seguridad alimentarias. Globalmente aceptadas como válidas y tomadas por las grandes superficies como pliego particular de obligado cumplimiento para poder suministrar producto de marca del distribuidor (fundamentalmente aunque no exclusivo).','El estándar BRC considera los principios y prácticas más apropiadas dirigidas a minimizar los riesgos de contaminación de los alimentos.','El cumplimiento del estándar BRC implica disponer de un eficaz sistema de seguridad alimentaria, así como un completo sistema de control del producto y del proceso, trabajando con personal formado y en unas instalaciones adecuadas.','Enplater se cerfico en el año 2006.'],
+                                                value   : 'BRC.jpg'
+                                            },{   type:'normal',
+                                                heading:{'principal' : "Medio ambiente", 'second': ""},
+                                                text : ['En Enplater establecemos controles de calidad en todas las fases de producción para asegurar la conformidad del producto y el cumplimiento de los requisitos.','Los controles y análisis de productos se realizan en el laboratorio, ubicado en las instalaciones de ambos centros de producción, mediante instrumentos y personal cualificado para obtener la máxima fiabilidad de los resultados.'],
+                                                value   : ''
                                             }
                                         ],
                                     'fr' : [{   type:'image',
-                                                heading:{'principal' : "", 'second': ""},
-                                                text : ['Chez Enplater nous vous proposons des emballages flexibles en fonction des caractéristiques et requis de votre produit, en assurant une bonne image, protection et machinabilitée.','De plus, nous vous proposons le soutien de ses spécialistes ainsi que les produits les plus innovateurs du marché pour que vous puissiez trouvez la solution la plus satisfaisante pour vos besoins.','La disponibilité d’un vaste échantillon de matériaux de technologie de pointe et de l’infinité de combinaisons possibles, tout en ajoutant la garantie d’une impression de qualité sur quelconque superficie, assure une haute valeur ajoutée pour nos clients.'],
-                                                value   : 'fabricacion.jpg'
+                                                heading:{'principal' : "BCR", 'second': ""},
+                                                text : ['Enplater établir des contrôles de qualité dans tous les processus de production afin de s’assurer que le produit respecte toutes les exigences de qualité.','Le contrôle et l’analyse des produits sont effectuées dans les locaux de Enplater, utilisant les meilleurs instruments et de personnel qualifié pour obtenir la plus grande fiabilité des résultats.'],
+                                                value   : 'BRC.jpg'
+                                            },{   type:'image',
+                                                heading:{'principal' : "Environnement", 'second': ""},
+                                                text : ['IoP est un système de sécurité alimentaire développé par la Brisith Retail Consortium (BRC) et l’Institut of Packaging (IoP), système spécifique par l’industrie agroalimentaire reconnu internationalement.','Enplater a décidé d’exécuter les requis afin de garantir à ses clients que la société accompli les objectifs de la norme BRC, soit l’accomplissement des taux d’émission fixés par rapport aux exigences de sécurité alimentaire, entre d’autres.','Globalement acceptées en tant que normes valides et prises par les grandes sociétés comme pli particulier d’accomplissement obligé pour pouvoir fournir des produits de marque distributeur (quoi que fondamental, pas exclusif).','Le standard BRC prend en compte les principes et les pratiques les plus appropriés qui visent à minimiser les risques de pollution des aliments.','Le respect du standard BRC implique disposer d’un efficace système de sécurité alimentaire, ainsi que d’un système complet de contrôle du produit et du processus, en travaillant avec du personnel formé et dans des installations adéquates.'],
+                                                value   : ''
                                             }
                                         ],
                                     'en' : [{   type:'image',
-                                                heading:{'principal' : "", 'second': ""},
-                                                text : ['English text','English text'],
-                                                value   : 'fabricacion.jpg'
+                                                heading:{'principal' : "BCR", 'second': ""},
+                                                text : ['BRC IoP, is a food security system developed by the British Retail Consortium (BRC) and the Institute of Packaging (IoP), specific for the food industry and recognized all along the world.','Enplater has decided to accomplish the requirements to guarantee to its customers that follows the BRC rules.','The BRC is accepted globally and it’s used by the biggest supermarket chains, asking it to all the suppliers that want to sell to them.','Enplater was certified on 2006'],
+                                                value   : 'BRC.jpg'
+                                            },{   type:'image',
+                                                heading:{'principal' : "Environment", 'second': ""},
+                                                text : ['Enplater establish quality controls in all the production processes to assure the product follows all the quality requirements.','The product control and analysis are done in Enplater premises, using the best qualified instruments and staff to obtain the maximum reliability on the results.'],
+                                                value   : ''
                                             }
                                         ]
                                 }
